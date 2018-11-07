@@ -18,15 +18,15 @@ import org.springframework.cloud.netflix.eureka.EnableEurekaClient;
  */
 @SpringBootApplication
 @EnableEurekaClient  // 创建服务提供者
-public class SpringClientStart {
-	private static Logger log = LoggerFactory.getLogger(SpringClientStart.class);
+public class SpringProviderStart {
+	private static Logger log = LoggerFactory.getLogger(SpringProviderStart.class);
 	/**
 	 * @Title: main
 	 * @param args
 	 */
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		SpringApplication.run(SpringClientStart.class, args);
+		SpringApplication.run(SpringProviderStart.class, args);
 		log.info("YunQi WApp booted.");
 	}
 
