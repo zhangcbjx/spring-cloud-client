@@ -7,6 +7,7 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.cloud.netflix.eureka.EnableEurekaClient;
 
 /**
  * @ClassName: SpringStart   
@@ -16,15 +17,16 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
  * @Copyright: 2018 www.yunqi.com Inc. All rights reserved.
  */
 @SpringBootApplication
-public class SpringStart {
-	private static Logger log = LoggerFactory.getLogger(SpringStart.class);
+@EnableEurekaClient  // 创建服务提供者
+public class SpringClientStart {
+	private static Logger log = LoggerFactory.getLogger(SpringClientStart.class);
 	/**
 	 * @Title: main
 	 * @param args
 	 */
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		SpringApplication.run(SpringStart.class, args);
+		SpringApplication.run(SpringClientStart.class, args);
 		log.info("YunQi WApp booted.");
 	}
 
