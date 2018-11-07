@@ -6,5 +6,12 @@ eureka:
     hostname: localhost
     status-page-url: http://${eureka.instance.hostname}:${server.port}/index
   client:
+    register-with-eureka: true
+    fetch-registry: true
     serviceUrl:
       defaultZone: http://${eureka.instance.hostname}:9000/eureka/
+      
+#服务名
+spring:
+  application:
+    name: fileServer-01
