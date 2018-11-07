@@ -5,11 +5,11 @@
 	<modelVersion>4.0.0</modelVersion>
 
 	<groupId>com.learn</groupId>
-	<artifactId>spring-cloud-client</artifactId>
+	<artifactId>spring-cloud-provider</artifactId>
 	<version>1.0.0</version>
 	<packaging>jar</packaging>
 
-	<name>spring-cloud-client</name>
+	<name>spring-cloud-provider</name>
 
 	<parent>
 		<groupId>org.springframework.boot</groupId>

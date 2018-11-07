@@ -14,4 +14,4 @@ eureka:
 #服务名
 spring:
   application:
-    name: fileServer-01
+    name: hello-provider
