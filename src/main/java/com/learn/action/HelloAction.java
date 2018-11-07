@@ -20,11 +20,6 @@ public class HelloAction {
 	
 	@RequestMapping (value = "get", method = RequestMethod.GET)
     public String get() {
-		try {
-			Thread.sleep(10 * 1000L);
-		} catch (InterruptedException e) {
-			e.printStackTrace();
-		}
        return "服务调用后返回";
     }
 }
