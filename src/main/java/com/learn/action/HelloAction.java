@@ -20,6 +20,7 @@ public class HelloAction {
 	
 	@RequestMapping (value = "get", method = RequestMethod.GET)
     public String get() {
-       return "服务调用后返回fff";
+	   System.out.println("服务提供端被调用");
+       return "服务提供端调用后返回";
     }
 }
