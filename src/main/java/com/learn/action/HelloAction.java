@@ -1,6 +1,3 @@
-/**
- * 
- */
 package com.learn.action;
 
 import org.springframework.web.bind.annotation.RequestMapping;
