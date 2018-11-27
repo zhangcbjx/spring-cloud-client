@@ -17,7 +17,7 @@ import org.springframework.cloud.netflix.eureka.EnableEurekaClient;
  * @Copyright: 2018 www.yunqi.com Inc. All rights reserved.
  */
 @SpringBootApplication
-@EnableEurekaClient  // 创建服务提供者
+@EnableEurekaClient  /** 创建服务提供者 **/
 public class SpringProviderStart {
 	private static Logger log = LoggerFactory.getLogger(SpringProviderStart.class);
 	/**
